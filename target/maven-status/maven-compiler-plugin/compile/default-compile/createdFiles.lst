@@ -1,0 +1,5 @@
+com\huato\jwt\bean\User.class
+com\huato\jwt\controller\UsersController.class
+com\huato\jwt\controller\LoginController.class
+com\huato\jwt\JWT.class
+com\huato\jwt\util\ResultBean.class
