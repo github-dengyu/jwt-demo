@@ -18,7 +18,8 @@ JWT通常由三部分组成: 头信息（header）, 消息体（payload）和签
 这就意味着基于token认证机制的应用不需要去考虑用户在哪一台服务器登录了，使得应用程序具有很好的伸缩性。确定是它的安全性，
 因为token完全暴露在客户端，这时候如果配合https中的ssl安全加密一起使用，那是一种比较好的方式。
 当然了，传统的cookie-session机制，使用集中式管理session机制，比如外部session存储方案已经非常成熟了（比如Redis），
-在一些Framework的帮助下（比如spring-session），session复制也就很容易处理。
+在一些Framework的帮助下（比如spring-session），session复制也就很容易处理。不过session管理用户量很庞大服务器需要
+承担很大的压力，这点要比jwt差很多。
 
 参考文章:
 什么是 JWT -- JSON WEB TOKEN   https://www.jianshu.com/p/576dbf44b2ae
